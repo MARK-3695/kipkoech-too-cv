@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#102a36">
-  <meta name="description" content="The professional profile of Mark Kipkoech Too, an Applied Computing graduate-in-progress focused on software development, cybersecurity and digital forensics.">
+  <meta name="description" content="The professional profile of Mark Kipkoech Too, an Applied Computing graduate focused on software development, cybersecurity and digital forensics.">
   <title>Mark Kipkoech Too | Applied Computing</title>
   <style>
     :root {
@@ -271,7 +271,10 @@
     }
     .profile-aside p { margin: 0; color: var(--muted); font-size: 12px; }
     .profile-aside strong { display: block; margin-bottom: 2px; color: var(--ink); font-size: 13px; }
-
+    .profile-aside ol { margin: 4px 0 0; padding-left: 18px; color: var(--muted); font-size: 12px; }
+    .profile-aside li + li { margin-top: 5px; }
+    .profile-aside li strong { display: inline; margin-bottom: 0; font-size: inherit; }
+ 
     .skills-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
     .skill-card {
       min-height: 176px;
@@ -329,9 +332,9 @@
     .experience-card ul { margin: 0; padding-left: 18px; color: #5b6d72; font-size: 13px; }
     .experience-card li + li { margin-top: 6px; }
 
-    .lower-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 24px; }
+    .lower-grid { display: grid; grid-template-columns: 1.35fr .65fr; gap: 24px; }
     .education-card, .languages-card {
-      padding: 26px;
+      padding: 30px;
       border: 1px solid var(--line);
       border-radius: 10px;
       background: var(--white);
@@ -349,9 +352,10 @@
       content: "";
     }
     .education-item + .education-item { margin-top: 20px; }
-    .education-item h3 { margin: 0; font-size: 14px; }
-    .education-item p { margin: 3px 0 0; color: var(--muted); font-size: 12px; }
-    .education-item .degree { color: var(--ink); }
+    .education-item h3 { margin: 0; font-size: 15px; }
+    .education-item p { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+    .education-item.primary h3 { font-size: 19px; }
+    .education-item .degree { color: var(--ink); font-size: 15px; }
     .languages-card { display: flex; flex-direction: column; justify-content: center; gap: 21px; }
     .language-row { display: flex; justify-content: space-between; gap: 16px; align-items: center; }
     .language-row strong { font-size: 14px; }
@@ -527,11 +531,49 @@
         <p class="section-note">Curious by nature. Reliable by practice.</p>
       </div>
       <div class="profile-card">
-        <p class="profile-copy">Applied Computing graduate-in-progress at KCA University, with an academic focus spanning software development, cybersecurity and computer forensics. Practical exposure includes ICT user support, computer and printer setup, troubleshooting, records organisation and day-to-day office technology support during internships at the Communications Authority of Kenya (CAK) and the Public Benefit Organizations Regulatory Authority (PBORA). I bring a methodical, service-oriented approach and an interest in building useful software, protecting information systems and supporting reliable ICT operations.</p>
+        <p class="profile-copy">Technology-focused professional with interests in software development, cybersecurity and computer forensics. Practical exposure includes ICT user support, computer and printer setup, troubleshooting, records organisation and day-to-day office technology support during internships at the Communications Authority of Kenya (CAK) and the Public Benefit Organizations Regulatory Authority (PBORA). I bring a methodical, service-oriented approach and an interest in building useful software, protecting information systems and supporting reliable ICT operations.</p>
         <div class="profile-aside">
-          <p><strong>Education</strong>BSc Applied Computing · KCA University</p>
-          <p><strong>Professional interests</strong>Software · Cybersecurity · Digital forensics</p>
+          <div>
+            <strong>Professional interests</strong>
+            <ol>
+              <li><strong>Software development:</strong> creating practical applications and improving user experiences.</li>
+              <li><strong>Cybersecurity:</strong> helping protect systems and data from threats.</li>
+              <li><strong>Digital forensics:</strong> examining digital evidence to understand security incidents and support investigations.</li>
+            </ol>
+          </div>
           <p><strong>Languages</strong>English · Kiswahili</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="section-heading">
+        <div><p class="section-kicker">Academic background</p><h2 id="education-title">Education</h2></div>
+      </div>
+      <div class="lower-grid">
+        <div class="education-card">
+          <div class="education-item primary">
+            <h3>KCA University</h3><p class="degree">Bachelor of Science in Applied Computing</p><p>2023–2026</p>
+          </div>
+          <div class="education-item">
+            <h3>Segero Adventist National School</h3><p>Kenya Certificate of Secondary Education (KCSE) · 2019–2022</p>
+          </div>
+          <div class="education-item">
+            <h3>Eldoret Premier School</h3><p>Kenya Certificate of Primary Education (KCPE) · 2011–2018</p>
+          </div>
+          <div class="education-item">
+            <h3>Forestview Academy</h3><p>Pre-primary education · 2009–2010</p>
+          </div>
+        </div>
+        <div class="languages-card" aria-label="Language proficiency">
+          <div>
+            <div class="language-row"><strong>English</strong><span>Proficient</span></div>
+            <div class="language-track" aria-hidden="true"><i></i></div>
+          </div>
+          <div>
+            <div class="language-row"><strong>Kiswahili</strong><span>Proficient</span></div>
+            <div class="language-track" aria-hidden="true"><i></i></div>
+          </div>
         </div>
       </div>
     </section>
@@ -544,19 +586,19 @@
       <div class="skills-grid">
         <article class="skill-card">
           <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m8 8-4 4 4 4m8-8 4 4-4 4m-3-11-2 14"/></svg></span>
-          <h3>Software & web</h3><p>Python, HTML, CSS and React</p>
+          <h3>Software & web</h3><p>Python, Java, Kotlin, HTML, CSS and React</p>
         </article>
         <article class="skill-card">
           <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v7c0 1.7 3.6 3 8 3s8-1.3 8-3V5m-16 7v7c0 1.7 3.6 3 8 3s8-1.3 8-3v-7"/></svg></span>
-          <h3>Databases</h3><p>MySQL and SQLite</p>
+          <h3>Databases</h3><p>MySQL, SQLite and PostgreSQL</p>
         </article>
         <article class="skill-card">
           <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/><path d="m9 12 2 2 4-4"/></svg></span>
-          <h3>Cybersecurity & forensics</h3><p>Academic focus; Autopsy and familiarity with forensic investigation tools</p>
+          <h3>Cybersecurity & forensics</h3><p>Academic focus; Autopsy and FTK Imager</p>
         </article>
         <article class="skill-card">
           <span class="skill-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4m-5-9 3-3 2 2 3-4"/></svg></span>
-          <h3>ICT user support</h3><p>Computer and printer setup, troubleshooting, OS installation and SSD upgrades</p>
+          <h3>ICT user support</h3><p>Computer and printer setup, troubleshooting, operating-system installation, SSD upgrades, user account setup, password resets, software installation and updates, network connectivity support, equipment inventory and data backups</p>
         </article>
       </div>
     </section>
@@ -568,7 +610,6 @@
       <div class="experience-list">
         <article class="experience-card">
           <div class="experience-date">
-            <time datetime="2026-08-03">3 Aug 2026</time> – <time datetime="2026-11-03">3 Nov 2026</time>
             <span class="tag">ICT / Office Support</span>
           </div>
           <div>
@@ -596,38 +637,6 @@
             </ul>
           </div>
         </article>
-      </div>
-    </section>
-
-    <section class="section" id="education" aria-labelledby="education-title">
-      <div class="section-heading">
-        <div><p class="section-kicker">Academic background</p><h2 id="education-title">Education & languages</h2></div>
-      </div>
-      <div class="lower-grid">
-        <div class="education-card">
-          <div class="education-item">
-            <h3>KCA University</h3><p class="degree">Bachelor of Science in Applied Computing</p><p>2023 – Present · Studies completed; graduation pending</p>
-          </div>
-          <div class="education-item">
-            <h3>Segero Adventist National School</h3><p>Kenya Certificate of Secondary Education (KCSE) · 2019–2022</p>
-          </div>
-          <div class="education-item">
-            <h3>Eldoret Premier School</h3><p>Kenya Certificate of Primary Education (KCPE) · 2011–2018</p>
-          </div>
-          <div class="education-item">
-            <h3>Forestview Academy</h3><p>Pre-primary education · 2009–2010</p>
-          </div>
-        </div>
-        <div class="languages-card" aria-label="Language proficiency">
-          <div>
-            <div class="language-row"><strong>English</strong><span>Proficient</span></div>
-            <div class="language-track" aria-hidden="true"><i></i></div>
-          </div>
-          <div>
-            <div class="language-row"><strong>Kiswahili</strong><span>Proficient</span></div>
-            <div class="language-track" aria-hidden="true"><i></i></div>
-          </div>
-        </div>
       </div>
     </section>
 
